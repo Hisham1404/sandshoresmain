@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LeaderBoard</title>
+    <link rel="stylesheet" href="{% static 'css/styleleaderboard.css' %}">
+</head>
+
+<body>
+    <main class="table">
+        <section class="table__header">
+            <h1>Leaderboard</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="{% static 'images/search.png' %}" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="{% static 'images/pdf.png' %}" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="{% static 'images/json.png' %}" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="{% static 'images/csv.png' %}" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="{% static 'images/excel.png' %}" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Player <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Level <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Points <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> <img src="{% static 'images/Zinzu Chan Lee.jpg' %}" alt="">Hisham</td>
+                        <td> Level 4 </td>
+                        <td>
+                            <p class="status delivered">Active</p>
+                        </td>
+                        <td> <strong> 5000 </strong></td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td><img src="{% static 'images/Jeet Saru.jpg' %}" alt=""> Jerishab </td>
+                        <td> Level 4 </td>
+                        <td>
+                            <p class="status delivered">Active</p>
+                        </td>
+                        <td> <strong>4500</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td><img src="{% static 'images/Sonal Gharti.jpg' %}" alt=""> Gokul Krishna </td>
+                        <td> Level 4 </td>
+                        <td>
+                            <p class="status delivered">Active</p>
+                        </td>
+                        <td> <strong>4500</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td><img src="{% static 'images/Alson GC.jpg' %}" alt=""> Viraj </td>
+                        <td> Level 4 </td>
+                        <td>
+                            <p class="status delivered">Active</p>
+                        </td>
+                        <td> <strong>4500</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td><img src="{% static 'images/Sarita Limbu.jpg' %}" alt=""> Abnas </td>
+                        <td> Level 3 </td>
+                        <td>
+                            <p class="status delivered">Active</p>
+                        </td>
+                        <td> <strong>4000</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td><img src="{% static 'images/Alex Gonley.jpg' %}" alt=""> Jerrin Shibu </td>
+                        <td> Level 3 </td>
+                        <td>
+                            <p class="status pending">Inactive</p>
+                        </td>
+                        <td> <strong>3500</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 7</td>
+                        <td><img src="{% static 'images/Alson GC.jpg' %}" alt=""> Vimal </td>    
+                        <td> Level 2 </td>
+                        <td>
+                            <p class="status pending">Inactive</p>
+                        </td>
+                        <td> <strong>3000</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 8</td>
+                        <td><img src="{% static 'images/Sarita Limbu.jpg' %}" alt=""> Imkan </td>
+                        <td> Level 2 </td>
+                        <td>
+                            <p class="status delivered">Active</p>
+                        </td>
+                        <td> <strong>2000</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="{% static 'images/Alex Gonley.jpg' %}" alt=""> Ajmal </td>
+                        <td> Level 1 </td>
+                        <td>
+                            <p class="status delivered">Active</p>
+                        </td>
+                        <td> <strong>1000</strong> </td>
+                    </tr>
+                    <!-- Add other table rows similarly -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <a href="/" class="btn">Home</a>
+</body>
+</html>

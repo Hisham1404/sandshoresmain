@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Congratulations</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/congratulations.css' %}">
+</head>
+<body>
+  <div class="congratulations-container">
+    <h1>Congratulations!</h1>
+    <p>You have successfully completed the quiz.</p>
+    <p>Your score is: <span id="score">10</span>/10</p>
+    <p>Well done!</p>
+    <a href="road.html" class="return-button">Return to Home</a>
+  </div>
+</body>
+</html>

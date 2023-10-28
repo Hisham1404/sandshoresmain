@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/road.css' %}">
+</head>
+
+<body>
+    <h1>Super Mario Timeline</h1>
+    <p>Initial launch dates of games in the Super Mario series. </p>
+    <ul class="timeline">
+        <li><time datetime="1985-09">
+                <font color="black">Level 1</font>
+            </time>Creating Design
+            <a href="../draw" class="stretched-link"></a>
+        </li>
+        <li>Understanding IPC
+            <a href="../ipc" class="stretched-link"></a>
+        </li>
+        <li>Quiz
+            <a href="../quiz" class="stretched-link"></a>
+        </li>
+        <li>Sell</li>
+        <li>Buy</li>
+    </ul>
+    <div id="text">
+        Coming soon... Level 2
+    </div>
+    <script type="text/javascript" src="{% static 'js/road.js' %}"></script>
+</body>
+
+</html>
