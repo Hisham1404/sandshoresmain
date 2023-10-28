@@ -40,7 +40,9 @@ def sign(request):
         password = request.POST['password']
 
         user = User.objects.create_user(username=username, email=email,password=password)
-        user.save();
+        user.save()
+        print(username,password,email)
+
         # return redirect('../../')
     else:
         return render(request, 'sandshoresmain1/sign.html')
